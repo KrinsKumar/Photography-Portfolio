@@ -21,4 +21,7 @@ module.exports = {
     },
   },
   plugins: [],
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 };
