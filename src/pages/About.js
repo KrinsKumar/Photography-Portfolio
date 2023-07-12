@@ -1,13 +1,14 @@
 import React from 'react';
-
 //import images
 import WomenImg from '../img/about/woman.png'
-
 //import link
 import { Link } from 'react-router-dom';
+//import motion
+import { motion } from 'framer-motion';
+import {transition1} from '../transitions'
 
 const About = () => {
-  return <section className='section'>
+  return <motion.section className='section'>
     <div className='container mx-auto h-full relative'>
       <div className='flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 text-center lg:text-left lg:pt-16'>
         <div className='flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden'>
@@ -28,11 +29,11 @@ const About = () => {
             voluptate, quibusdam, quia voluptas quod quos voluptatibus quae
             doloribus quidem voluptatem.s
           </p>
-          <Link to={`/portfolio`} className='btn'>My technical side</Link>
+          <Link to={`/portfolio`} className='btn'>View My Work</Link>
         </div>
       </div>
     </div>
-  </section>;
+  </motion.section>;
 };
 
 export default About;
